@@ -44,9 +44,10 @@ properties:
   collector.use_datadog:
     description: "enable Datadog plugin"
     default: false
-  collector.use_tsdb:
-    description: "enable OpenTsdb plugin"
-    default: false
+  collector.opentsdb.address:
+    description: "IP address of OpenTsdb"
+  collector.opentsdb.port:
+    description: "TCP port of OpenTsdb"
   nats.address:
     description: "NATS address"
   nats.password:
@@ -55,10 +56,6 @@ properties:
     description: "NATS TCP port"
   nats.user:
     description: "NATS user"
-  opentsdb.address:
-    description: "IP address of OpenTsdb"
-  opentsdb.port:
-    description: "TCP port of OpenTsdb"
   syslog_aggregator.address:
     description: "IP address of syslog aggregator"
   syslog_aggregator.port:

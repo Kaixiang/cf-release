@@ -8,10 +8,10 @@ logging:
 
 deployment_name: <%= properties.collector.deployment_name %>
 
-<% if properties.collector && properties.collector.use_tsdb %>
+<% if properties.collector && properties.collector.opentsdb %>
 tsdb:
-  host: <%= properties.opentsdb.address %>
-  port: <%= properties.opentsdb.port %>
+  host: <%= properties.collector.opentsdb.address %>
+  port: <%= properties.collector.opentsdb.port %>
 <% end %>
 
 <% if properties.collector && properties.collector.use_aws_cloudwatch %>
