@@ -1,0 +1,6 @@
+---
+name: gonats
+dependencies:
+- golang
+files:
+- gonats/src/github.com/**/*
