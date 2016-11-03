@@ -232,7 +232,7 @@ jobs:
     templates: (( merge || meta.api_templates ))
     instances: 1
     resource_pool: large_z1
-    persistent_disk: 0
+    persistent_disk: ~
     default_networks:
       - name: cf1
     networks: (( merge || default_networks ))
@@ -251,7 +251,7 @@ jobs:
     templates: (( merge || meta.api_templates ))
     instances: 1
     resource_pool: large_z2
-    persistent_disk: 0
+    persistent_disk: ~
     default_networks:
       - name: cf2
     networks: (( merge || default_networks ))
@@ -270,7 +270,7 @@ jobs:
     templates: (( merge || meta.clock_templates ))
     instances: 1
     resource_pool: medium_z1
-    persistent_disk: 0
+    persistent_disk: ~
     default_networks:
       - name: cf1
     networks: (( merge || default_networks ))
@@ -283,7 +283,7 @@ jobs:
     templates: (( merge || meta.api_worker_templates ))
     instances: 1
     resource_pool: small_z1
-    persistent_disk: 0
+    persistent_disk: ~
     default_networks:
       - name: cf1
     networks: (( merge || default_networks ))
@@ -297,7 +297,7 @@ jobs:
     templates: (( merge || meta.api_worker_templates ))
     instances: 1
     resource_pool: small_z2
-    persistent_disk: 0
+    persistent_disk: ~
     default_networks:
       - name: cf2
     networks: (( merge || default_networks ))

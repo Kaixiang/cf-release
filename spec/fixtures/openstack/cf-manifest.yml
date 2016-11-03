@@ -400,7 +400,7 @@ jobs:
   name: api_z1
   networks:
   - name: cf1
-  persistent_disk: 0
+  persistent_disk: ~
   properties:
     consul:
       agent:
@@ -464,7 +464,7 @@ jobs:
   name: api_z2
   networks:
   - name: cf2
-  persistent_disk: 0
+  persistent_disk: ~
   properties:
     consul:
       agent:
@@ -524,7 +524,7 @@ jobs:
   name: clock_global
   networks:
   - name: cf1
-  persistent_disk: 0
+  persistent_disk: ~
   properties:
     metron_agent:
       zone: z1
@@ -543,7 +543,7 @@ jobs:
   name: api_worker_z1
   networks:
   - name: cf1
-  persistent_disk: 0
+  persistent_disk: ~
   properties:
     metron_agent:
       zone: z1
@@ -568,7 +568,7 @@ jobs:
   name: api_worker_z2
   networks:
   - name: cf2
-  persistent_disk: 0
+  persistent_disk: ~
   properties:
     metron_agent:
       zone: z2
